@@ -1,4 +1,13 @@
-<div>
-    <input [(ngModel)]="newTaskTitle" placeholder="Nueva tarea" />
-    <button (click)="addTask()">Agregar</button>
+<div class="flex justify-center items-center mb-4">
+  <input
+    [(ngModel)]="newTaskTitle"
+    placeholder="Nueva tarea"
+    class="mx-2 p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-800"
+  />
+  <button
+    (click)="addTask()"
+    class="bg-pink-600 text-white px-4 py-2 rounded-lg hover:bg-pink-800 transition"
+  >
+    Agregar
+  </button>
 </div>

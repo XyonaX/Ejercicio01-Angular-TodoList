@@ -1,11 +1,13 @@
 <div *ngIf="tasks.length > 0; else noTasksMessage">
-    <app-todo-item
-    *ngFor="let task of tasks"
-    [task]="task"
-    (completed)="handleTaskCompleted($event)"
-    (deleted)="handleTaskDeleted($event)"
-    ></app-todo-item>
+    <div class="flex flex-col space-y-4">
+        <app-todo-item
+            *ngFor="let task of tasks"
+            [task]="task"
+            (completed)="handleTaskCompleted($event)"
+            (deleted)="handleTaskDeleted($event)"
+        ></app-todo-item>
+    </div>
 </div>
 <ng-template #noTasksMessage>
-    <p>No hay tareas pendientes.</p>
+    <p class="text-gray-300 text-center">No hay tareas pendientes.</p>
 </ng-template>
