@@ -1,0 +1,5 @@
+<div class="task-item">
+    <span [class.completed]="task.completed">{{ task.title }}</span>
+    <button (click)="markAsCompleted()">✔</button>
+    <button (click)="deleteTask()">❌</button>
+</div>

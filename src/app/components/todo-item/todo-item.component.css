@@ -1,0 +1,4 @@
+.completed {
+    text-decoration: line-through;  /* Tacha el texto */
+    color: gray;                    /* Cambia el color a gris (opcional) */
+}
